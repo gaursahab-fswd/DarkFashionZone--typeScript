@@ -1,0 +1,9 @@
+.home-background{
+
+    background-image: url('https://image.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_155003-3944.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
