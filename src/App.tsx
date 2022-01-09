@@ -1,10 +1,14 @@
 
 import React, {FC} from 'react';
-import HeaderSection from './Fullpage/Components/Header';
+import HomeSection from './Fullpage/Components/Home';
+import AboutSection from './Fullpage/Components/About';
 
 const App: FC = () => {
   return(
-  <HeaderSection/>
+    <div>
+      <HomeSection/>
+      <AboutSection/>
+    </div>
   );
 }
 

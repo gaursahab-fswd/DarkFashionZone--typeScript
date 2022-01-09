@@ -1,9 +1,10 @@
 .home-background{
 
-    background-image: url('https://image.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_155003-3944.jpg');
+    background-image: url('https://images.pexels.com/photos/354103/pexels-photo-354103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+ 
 }
