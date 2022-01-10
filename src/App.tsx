@@ -1,13 +1,14 @@
 
 import React, {FC} from 'react';
 import HomeSection from './Fullpage/Components/Home';
-import AboutSection from './Fullpage/Components/About';
+import AboutPage from './Fullpage/Components/pages/About';
+import SignUp from './Fullpage/Components/pages/Signup';
 
 const App: FC = () => {
   return(
     <div>
       <HomeSection/>
-      <AboutSection/>
+      <SignUp />
     </div>
   );
 }
