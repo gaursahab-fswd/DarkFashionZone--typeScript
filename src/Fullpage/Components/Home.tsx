@@ -1,41 +1,53 @@
-import React from 'react';
-import  './Component.style.css';
+import React from "react";
+import "./pages/Component.style.css";
 
+const AboutSection = () => {
+  const signUp = () => {};
 
-
-
-const AboutSection = () =>{
-
-    const signUp = () =>{
-
-        
-
-    }
-
-    return(
-    <div className='container'>
-        <div className='container home-background flex bg-gray-900 text-center '>
-            <div className='text-white'>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-            <div className='mx-auto pt-72'> 
-                <h1 className='text-6xl text-shadow'>Welcome to Dark Fashion Zone</h1>
-                <form>
-                    <div className='pt-8'>
-                        <button onClick={()=> signUp()} className='bg-sky-500 hover:bg-sky-700 px-5 py-2 text-md leading-5 rounded-full font-semibold text-white mr-4'>SIGN UP</button>
-                        
-                        <button className='bg-slate-500 hover:bg-slate-700 px-5 py-2 text-md leading-5 rounded-full font-semibold text-white'>LOG IN</button>
-                    </div>
-                </form>              
-            </div>
+  return (
+    <div className="container-fluid">
+      <div className="">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div className="container-fluid home-background text-center pt-4">
+        <div className="home-content">
+          <h1 className="display-2 text-dark">Welcome to Dark Fashion Zone</h1>
+          <div className="pt-8">
+            <button onClick={() => signUp()} className="btn btn-primary">
+              SIGN UP
+            </button>
+            &nbsp;
+            <button className="btn btn-success">LOG IN</button>
+          </div>
         </div>
+      </div>
     </div>
-);
-}
+  );
+};
 
 export default AboutSection;

@@ -6,5 +6,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: -1;
  
+}
+
+.home-content{
+
+    padding-top: 250px;
+}
+
+.menu-item ul li{
+    
+    list-style: none;
 }

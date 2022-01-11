@@ -3,31 +3,81 @@ import React from 'react'
 const SignUp = () => {
 
     return(
-    <div className="container">
-    <h1>Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr />
+        <div className='container-fluid bg-light pt-4'>
+            <div className='container'>
+           
+  <div className="container h-100">
+    <div className="row d-flex justify-content-center align-items-center h-100">
+      <div className="col-lg-12 col-xl-11">
+        <div className="card text-black">
+          <div className="card-body p-md-5">
+            <div className="row justify-content-center">
+              <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required />
+                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required />
+                <form className="mx-1 mx-md-4">
 
-    <label><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                  <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" className="form-control" />
+                      <label className="form-label" >Your Name</label>
+                    </div>
+                  </div>
 
-    <label>
-      <input type="checkbox" name="remember" /> Remember me
-    </label>
+                  <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" className="form-control" />
+                      <label className="form-label" >Your Email</label>
+                    </div>
+                  </div>
 
-    <p>By creating an account you agree to our <a href="#" >Terms & Privacy</a>.</p>
+                  <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" className="form-control" />
+                      <label className="form-label" >Password</label>
+                    </div>
+                  </div>
 
-    <div className="clearfix">
-      <button type="button" className="cancelbtn">Cancel</button>
-      <button type="submit" className="signupbtn">Sign Up</button>
+                  <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4cd" className="form-control" />
+                      <label className="form-label" >Repeat your password</label>
+                    </div>
+                  </div>
+
+                  <div className="form-check d-flex justify-content-center mb-5">
+                    <input
+                      className="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="form2Example3c"
+                    />
+                    <label className="form-check-label" >
+                      I agree all statements in <a href="#!">Terms of service</a>
+                    </label>
+                  </div>
+
+                  <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" className="btn btn-primary btn-lg">Register</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+        </div>
+      </div>
   );
 
 }
