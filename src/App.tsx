@@ -1,17 +1,21 @@
 
 import React, {FC} from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
 import HomeSection from './Fullpage/Components/Home';
-import AboutPage from './Fullpage/Components/pages/About';
+import Routes from './Fullpage/Routes';
 import SignUp from './Fullpage/Components/pages/Signup';
 import LogIn from './Fullpage/Components/pages/Login';
+import AppRoutes from './Fullpage/Routes';
+import AboutSection from './Fullpage/Components/Home';
 
-const App: FC = () => {
+function App() {
   return(
-    <div>
-      <HomeSection/>
-      <SignUp />
-      <LogIn/>
-    </div>
+    
+    <BrowserRouter>
+      <AboutSection />
+      <Routes/>
+      </BrowserRouter>
+    
   );
 }
 

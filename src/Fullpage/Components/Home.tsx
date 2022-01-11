@@ -1,5 +1,6 @@
 import React from "react";
 import "./pages/Component.style.css";
+import { NavLink } from "react-router-dom";
 
 const AboutSection = () => {
   const signUp = () => {};
@@ -11,24 +12,24 @@ const AboutSection = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/home">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/about">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/blog">
                   Blog
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
